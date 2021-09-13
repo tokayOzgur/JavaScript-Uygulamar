@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sınıflandırma</title>
+    <!--  bootstrap -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Jquery aktifleştirme -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Gloabl CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        #kural {
+            width: 80%;
+        }
+
+        #tablo {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button class="btn btn-light col-12"><a id="goBack" href="1Anasayfa.html">Come to Menü Page</a></button>
+        <br>
+        <br>
+        <h1 class="text-center alert alert-danger">Sınıflandırma | Test</h2>
+            <div class="row alert bg-secondary">
+                <!-- Madde Başlık -->
+                <div class="col-4 alert alert-secondary text-danger">
+                    <ul>
+                        <li>
+                            <h5>2 Parçaya Bölme Testi</h5>
+                        </li>
+                    </ul>
+                </div>
+                <!-- içerik -->
+                <div class="col-8 alert alert-secondary">
+                    <p>
+                        <b>Percantage Split</b> (Fixed or <b>Holdout</b> )
+                        yönteminde veri, eğitim ve test olaacak şekilde ikiye ayrılır.
+                    </p>
+                </div>
+
+                <!-- Madde Başlık -->
+                <div class="col-4 alert alert-secondary text-danger">
+                    <ul>
+                        <li>
+                            <h5>Çapraz Doğrulama Testi</h5>
+                        </li>
+                    </ul>
+                </div>
+                <!-- içerik -->
+                <div class="col-8 alert alert-secondary">
+                    <p>
+                        Çapraz Doğrulama, <i>k</i>-kat çapraz doğrulama ( <i>k</i>-fol cross validation ) ve birini
+                        dışarıda bırak çapraz doğrulama (leave one out cross validation - LOOCV ) olmak üzere iki farklı
+                        şekilde kullanılmaktadır.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <hr>
+
+            <div class="row alert alert-success">
+                <div class="col-12">
+
+                    <a href="https://onlineconfusionmatrix.com/" target="_blank">
+                        <h3 class=" alert alert-secondary text-danger text-center">
+                            <b> Karışıklık Matrisi</b>
+                        </h3>
+                        <small>linktir tıkla</small>
+                    </a>
+                </div>
+
+                <!-- tablo -->
+                <div class="col-12 alert alert-secondary text-center" id="kural">
+                    <img src="img/tabloMatris.jpg" id="tablo" alt="">
+                </div>
+                <!-- Kural neolur ne olmaz -->
+                <div class="col-12 alert alert-secondary text-center">
+                    <img src="img/kamasıklıkMatrisi.jpg" id="kural" alt="">
+                </div>
+            </div>
+
+    </div>
+</body>
+
+</html>

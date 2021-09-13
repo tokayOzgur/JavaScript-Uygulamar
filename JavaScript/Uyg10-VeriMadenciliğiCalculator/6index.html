@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kümeler</title>
+
+  <!--  bootstrap -->
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <!-- Jquery aktifleştirme -->
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <!-- Gloabl CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Özel CSS -->
+  <style>
+    a {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <button class="btn btn-light col-12">
+      <a id="goBack" href="1Anasayfa.html">Come to Menü Page</a>
+    </button>
+    <br />
+    <br />
+    <div class="row">
+      <!-- Başlık -->
+      <div class="col-12 alert alert-primary text-center text-danger">
+        <h1>Kümeler</h1>
+      </div>
+
+      <!-- Uzaklık Ölçütleri -->
+      <div class="col-12 alert alert-warning text-dark">
+        <h4>Uzaklık Ölçütleri</h4>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <a target="_blank"
+              href="https://www.translatorscafe.com/unit-converter/en-US/calculator/two-points-distance/">
+              <b>Öklit Uzaklık Ölçütü</b>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a target="_blank" href="https://npm.runkit.com/manhattan">
+              <b>Manhattan Uzaklık Ölçütü</b></a>
+          </li>
+          <li class="list-group-item">
+            <a target="_blank" href="https://npm.runkit.com/compute-minkowski-distance">
+              <b>Minkowski Uzaklık Ölçütü</b>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Hiyerarşik Kümeleme -->
+      <div class="col-12 alert alert-success">
+        <h4>Birleştirici Hiyerarşik Yöntemler</h4>
+        <ul class="list-group">
+          <!-- 1- en yakın komşu algoritması -->
+          <li class="list-group-item">
+            <h6 class="text-danger"><b>En yakın komşu algoritması</b></h6>
+          </li>
+          <!--  içerik -->
+          <div class="col-12 alert alert-primary">
+            <ul>
+              <!-- Adım-1 -->
+              <li>
+                <b class="text-dark">
+                  Öncelikle uzaklık tablosunun (matrisinin) hesaplanması
+                  gerekiyor
+                </b>
+              </li>
+
+              <!-- Adım-2 -->
+              <li>
+                <p>
+                  Uzaklıklar göz önüne alınarak <b>Min d(i,j )</b> seçilir.
+                  Söz konusu uzaklıkla ilgili satırlar birleştirilerek yeni
+                  bir küme elde edilir. Bu duruma göre uzaklıkların yeniden
+                  hesaplanması gerekir.
+                </p>
+              </li>
+
+              <!-- Adım-3 -->
+              <li>
+                <p>
+                  Birden fazla gözlem değerine sahip olan iki küme arasındaki
+                  uzaklığın belirlenmesi gerektiğinde farklı bir yol
+                  izlenir.İki kümenin içerdiği gözlemler arasında
+                  <b>“birbirine en yakın olanların uzaklığı”</b> iki kümenin
+                  birbirine olan uzaklığı olarak ifade edilir.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 2 - En uzak komşu algoritması -->
+          <li class="list-group-item">
+            <h6 class="text-danger"><b>En uzak komşu algoritması</b></h6>
+          </li>
+          <!-- tanım -->
+          <div class="col-12 alert alert-primary">
+            Yöntem yakın komşu algoritmasına çok benzer; Min d(i,j) değeri
+            belrilendikten sonra bu kez kümeler arasındaki uzaklık
+            belirlenirken iki kümenin birbirine en uzak elemanları arasındaki
+            mesafe küme arasındaki uzunluk olarak tayin edilir.
+          </div>
+        </ul>
+      </div>
+    </div>
+    <hr />
+
+    <!-- HİYERARŞİK OLMAYAN KÜMELEME -->
+    <div class="row alert alert-info">
+      <h4>HİYERARŞİK OLMAYAN KÜMELEME</h4>
+
+      <!-- alt başlık -->
+      <div class="col-12">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <b class="text-danger">k-Ortalamalar Yöntemi</b>
+          </li>
+        </ul>
+        <!-- içerik -->
+        <div class="col-12 aler alert-warning">
+          <p>
+            <b>Algoritma</b>
+            <br />
+            K-ortalama algoritmasına başlamadan önce k küme sayısının
+            belirlenmesi gerekir. Söz konusu k değeri belirlendikten sonra her
+            bir kümeye gözlem değerleri atanır ve böylece {C<sub>1</sub>,C<sub>2</sub>,….,C<sub>k</sub> }
+            kümeleri
+            belirlenmiş olur.Ardından aşağıdaki işlemler gerçekleştirilir:
+            <br />
+            <b>a)</b>
+            Her bir kümenin merkezi belirlenir.Bu merkezler M<sub>1</sub>,M<sub>2</sub>,..,M<sub>k</sub>
+            biçimindedir. <br />
+            <b>b)</b>
+            e<sub>1</sub>,e<sub>2</sub>,…,e<sub>k</sub> küme içi değişmeler hesaplanır.Bu değişmelerin toplamı
+            olan E<sub>k</sub><sup>2</sup> değeri bulunur. <br />
+            <b> c)</b> M<sub>k</sub> merkez değerleri ile gözlem değerleri arasındaki
+            uzaklıklar hesaplanır.Bu gözlem değeri hangi merkeze yakın ise, o
+            merkez ile ilgili küme içine dahil edilir. <br />
+            <b>d)</b> Yukarıdaki b ve c adımları, kümelerde herhangi bir
+            değişiklik olmayıncaya dek sürdürülür.
+          </p>
+          <hr style="border-color: black;">
+          <br>
+          <div class="row ">
+            <div class="col-6">
+              <img src="img/Mk.jpg" class="resimFul">
+            </div>
+            <div class="col-6">
+              <img src="img/ei2.jpg" class="resimFul">
+            </div>
+            <div class="col-6">
+              <img src="img/Ek2.jpg" class="resimFul">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <hr />
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery Uygulama</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Jquery aktifleştirme -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <!--  JQery kod dosyamızı ekleme -->
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="kutu col-md-3 col-sm-4 col-xs-4">
+          <h1 class="alert-info text-center">10</h1>
+        </div>
+        <div class="kutu col-md-3 col-sm-4 col-xs-4">
+          <h1 class="alert-info text-center">20</h1>
+        </div>
+        <div class="kutu col-md-3 col-sm-4 col-xs-4">
+          <h1 class="alert-info text-center">30</h1>
+        </div>
+        <div class="kutu col-md-3 col-sm-4 col-xs-4">
+          <h1 class="alert-info text-center">40</h1>
+        </div>
+        <div class="kutu col-md-3 col-sm-4 col-xs-4">
+          <h1 class="alert-info text-center">50</h1>
+        </div>
+        <div class="kutu col-md-3 col-sm-4 col-xs-4">
+          <h1 class="alert-info text-center">60</h1>
+        </div>
+      </div>
+
+      <label>
+        <input type="radio" id="arti" checked name="isaret" value="" />
+        Topla <b>+</b>
+      </label>
+
+      <br />
+
+      <label>
+        <input type="radio" id="eksi" name="isaret" value="" />
+        Çıkar <b>-</b>
+      </label>
+
+      <div class="kutu col-md-3 col-sm-4 col-xs-4 alert-warning text-center">
+        <h1 id="yaz"></h1>
+      </div>
+    </div>
+  </body>
+</html>

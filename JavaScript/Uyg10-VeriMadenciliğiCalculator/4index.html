@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KNN Algoritması</title>
+  <!--  bootstrap -->
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <!-- Gloabl Css -->
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    hr {
+      border: 1px solid black;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <button class="btn btn-light col-12">
+      <a id="goBack" href="1Anasayfa.html">Come to Menü Page</a>
+    </button>
+    <br />
+    <br />
+    <h2 class="text-center">En Yakın k-komşu Algoritması</h2>
+    <hr />
+    <div class="row">
+      <div class="col-12 alert bg-secondary">
+        <h4>Adım -1 => Öklid Uzaklığını Hesapla</h4>
+        <br />
+
+        <a href="https://npm.runkit.com/euclidean-distance" target="_blank" class="alert alert-warning">
+          <b>Öklid Uzaklık Hesaplayıcısı</b>
+        </a>
+
+        <b>Formül =</b>
+        <img src="img/oklit.jpg" alt="" />
+        <br />
+        <br />
+        <ul>
+          <li><b>En küçük k tane uzaklığı belirle.</b></li>
+        </ul>
+      </div>
+
+      <div class="col-12 alert bg-light" style="color: black">
+        <h4 class="text-danger">Ağırlıklı Oylama Yöntemi</h4>
+        <br />
+        <div class="row">
+          <!-- kural -->
+          <div class="col-12 text-center">
+            <img src="img/ağırlıklıOylama.jpg" width="400px" alt="" />
+          </div>
+        </div>
+        <hr />
+
+        <div class="row">
+          <div class="col-2 text-right">
+            <label for="oklid">
+              <b> d(i , j)<sup>ı</sup> =</b>
+            </label>
+          </div>
+          <!-- oklid değeri alma -->
+          <div class="col-4 text">
+            <input type="number" id="deger" name="oklid" />
+          </div>
+          <!--  buton tasarımı -->
+          <div class="col-2">
+            <button id="hesapla" class="btn btn-warning">
+              <b>Hesapla</b>
+            </button>
+          </div>
+          <div class="col-4" id="panel"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="4app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ID3</title>
+    <!--  bootstrap -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Gloabl Css -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <button class="btn btn-light col-12"><a id= "goBack" href="1Anasayfa.html">Come to Menü Page</a></button>
+        <br /><br />
+        <h2 class="text-center">ID3 Algoritması</h2>
+        <br />
+        <hr />
+        <!-- entropi -->
+        <div class="row">
+            <h4>Adım-1 => Entropi Hesapla</h4>
+            <div class="col-12 bg-info text-center">
+                <img src="img/entropi.jpg" alt="" />
+            </div>
+
+            <div class="col-12 bg-dark">
+                <br />
+
+                <label for="pi">P<sub>i</sub> Adedi : </label>
+                <input type="number" id="piAdet" />
+                <button id="piAdetGetir" class="btn btn-light">Getir</button>
+
+                <br />
+                <hr />
+                <!-- panel -->
+                <div id="panel"></div>
+            </div>
+        </div>
+
+        <br />
+        <hr />
+        <hr />
+        <br />
+        <!-- kazanç ölçütü -->
+        <div class="row">
+            <h4>Adım-2 => Kazanç Ölçütü'nü Hesapla</h4>
+
+            <div class="col-12 bg-info text-center">
+                <h1><b>Kazanç(X,T)=H(T)-H(X,T)</b></h1>
+                <br>
+                <h5><b>Öncelikle H(X,T) ' yi hesapla</b></h3>
+                    <img src="img/H-x-t.jpg" alt="">
+            </div>
+
+            <div class="col-12 bg-dark">
+                <br />
+                <div class="row">
+                    <div class="col-md-4"><input type="number" id="ht" placeholder="H(T) Değeri" /> <b>-</b>
+                        <br>
+                        <br>
+                        <button id="kazancHesapla" class="btn btn-light">Getir</button>
+                    </div>
+                    <div class="col-md-4"><input type="number" id="hxt" placeholder="H(X,T) Değeri" /> <b>=</b></div>
+                    <div class="col-md-4" id="panel2"></div>
+                </div>
+
+                <br />
+                <hr />
+
+            </div>
+        </div>
+
+        <br>
+        <hr>
+        <hr>
+        <br>
+
+        <!-- kazanç oranı -->
+        <div class="row">
+            <h4>Adım-3 => Kazanç Oranı'nı Hesapla</h4>
+
+            <div class="col-12 bg-info text-center">
+
+
+                <h5><b>Öncelikle H(P<sub>X, T</sub> ) ' yi hesapla</b></h3>
+                    <img src="img/kazancOranı.jpg" alt="">
+            </div>
+
+            <div class="col-12 bg-dark">
+                <br />
+                <div class="row">
+                    <div class="col-md-4">
+                        <input type="number" id="kOlcut" placeholder="Kazanç(X,T) Değeri" />
+                        <b> /</b>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="number" id="HPxt" placeholder="H(P x,t ) Değeri" />
+                        <b>=</b>
+                        <br><br>
+                        <button id="kazancOranHesapla" class="btn btn-light">Getir</button>
+                    </div>
+                    <div class="col-md-4" id="panel3"></div>
+                </div>
+
+                <br />
+                <hr />
+
+            </div>
+        </div>
+    </div>
+
+    <script src="2app.js"></script>
+
+</body>
+
+</html>

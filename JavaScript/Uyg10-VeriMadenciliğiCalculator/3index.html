@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Twoning & Gini</title>
+  <!--  bootstrap -->
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+  <!-- Jquery aktifleştirme -->
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <!-- Global Css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <button class="btn btn-light col-12">
+      <a id="goBack" href="1Anasayfa.html">Come to Menü Page</a>
+    </button>
+    <br />
+    <br />
+    <h2 class="text-center">Twoing Algoritması</h2>
+    <br />
+    <hr />
+
+    <div class="row bg-secondary alert">
+      <h4>Adım-1</h4>
+      <div class="col-12">
+        <ol>
+          <li>
+            <b>
+              <span class="text-info">t<sub>sol</sub> </span> ve
+              <span class="text-info">t<sub>sağ</sub> </span> bölünmelerini
+              yap.
+            </b>
+          </li>
+          <br />
+
+          <!-- Psol Kuralı -->
+          <li>
+            <div class="row align-items-center border">
+              <div class="col-3 text-center">
+                <b> P<sub>Sol</sub> = </b>
+              </div>
+
+              <div class="col-9 text-left">
+                <br />
+                <p class="text-center">
+                  t<sub>sol</sub> 'daki herbir nitelik değerinin ilgili
+                  sütundaki tekrar sayısı
+                </p>
+                <hr />
+                <p class="text-center">
+                  Eğitim kümesindeki kayıtların sayısı
+                </p>
+              </div>
+            </div>
+          </li>
+          <br />
+
+          <!-- P(j|Tsol) Kuralı -->
+          <li>
+            <div class="row align-items-center border">
+              <div class="col-3 text-center">
+                <b> P( j | t<sub>sol</sub> ) = </b>
+              </div>
+
+              <div class="col-9 text-left">
+                <br />
+                <p class="text-center">
+                  t<sub>sol</sub> 'daki kayıtların sayısı
+                </p>
+                <hr />
+                <p class="text-center">
+                  t<sub>sol</sub> 'daki herbir nitelik değerinin ilgili
+                  sütundaki tekrar sayısı
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <br />
+
+          <li>
+            <div class="row align-items-center">
+              <div class="col-12 border">
+                <img src="img/twoingFi.jpg" width="600px" alt="" />
+              </div>
+            </div>
+          </li>
+
+          <br />
+          <li>
+            <b>
+              Ф(s|t) değerleri hesaplandıktan sonra içlerinden en büyük olanı
+              seçilir.
+            </b>
+          </li>
+        </ol>
+      </div>
+      <br />
+
+      <h4>Adım-2</h4>
+      <b>
+        Algoritmanın birinci adımına dönülerek ağacın alt kümesine aynı
+        işlemler uygulanır.
+      </b>
+    </div>
+
+    <br />
+    <hr />
+    <hr />
+    <br />
+
+    <!-- Gini Algoritması -->
+    <br />
+    <h2 class="text-center">Gini Algoritması</h2>
+    <br />
+    <hr />
+
+    <div class="row bg-secondary alert">
+      <h4>Adım-1</h4>
+      <div class="col-12">
+        <ol>
+          <li>
+            <b>
+              <span class="text-info">Gini<sub>sol</sub> </span> ve
+              <span class="text-info">Gini<sub>sağ</sub> </span> bölünmelerini
+              yap.
+            </b>
+          </li>
+          <br />
+
+          <!-- Gini Sol ve Sağ   Kuralı -->
+          <li>
+            <div class="row align-items-center border">
+              <div class="col-12 text-center">
+                Gini sol ve Gini sağ değerlerini hesapla.
+                <img src="img/Gini1.jpg" width="500px" alt="" />
+              </div>
+            </div>
+          </li>
+          <br />
+
+          <br />
+
+          <li>
+            <div class="row align-items-center">
+              <div class="col-12 border">
+                <img src="img/Gini2.jpg" width="600px" alt="" />
+              </div>
+            </div>
+          </li>
+
+          <br />
+          <li>
+            <b>
+              Gini <sub>j</sub> değeri hesaplandıktan sonra içlerinden en
+              küçük olanı seçilir.
+            </b>
+          </li>
+        </ol>
+      </div>
+      <br />
+
+      <h4>Adım-2</h4>
+      <b>
+        Algoritmanın birinci adımına dönülerek ağacın alt kümesine aynı
+        işlemler uygulanır.
+      </b>
+    </div>
+
+    <br />
+    <hr />
+    <hr />
+    <br />
+  </div>
+</body>
+
+</html>

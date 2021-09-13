@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veri Madenciliği Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--  bootstrap -->
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Jquery aktifleştirme -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <!--  JQery kod dosyamızı ekleme -->
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="text-align: center">Veri Madenciliği Calculator</h1>
+      <br />
+      <hr />
+      <br />
+
+      <!-- Min-Max Normalleştirilmesi -->
+      <h3 style="text-align: center">Min-Max Normalleştirilmesi</h3>
+      <div class="row">
+        <!-- Kural -->
+        <div class="col-md-11 kural">
+          <img src="img/min-maxNormalleştirilmesi.jpg" alt="" />
+        </div>
+        <br /><br />
+
+        <div class="col-md-7 islem">
+          <label for="x-min">X-Min: </label>
+          <input
+            type="number"
+            id="x-min"
+            placeholder="X-Min Değerini Giriniz"
+          />
+          <br />
+          <label for="x-max">X-Max: </label>
+          <input
+            type="number"
+            id="x-max"
+            placeholder="X-Max Değerini Giriniz"
+          />
+
+          <br />
+          <label for="x-deger">X Değeri: </label>
+          <input type="number" id="x-deger" placeholder="X Değerini Giriniz" />
+          <br />
+
+          <button id="MinMaxNorm" type="button" class="btn btn-primary">
+            Hesapla
+          </button>
+        </div>
+        <div class="col-md-4 cozum">
+          <b id="cozum-yaz"></b>
+        </div>
+      </div>
+
+      <br />
+      <hr />
+      <br />
+
+      <!-- Z-Score Standartlaştırılması -->
+      <h3>Z-Score Standartlaştırılması</h3>
+      <div class="row">
+        <!-- Kural -->
+        <div class="col-md-11 kural">
+          <img src="img/Z-score.jpg" style="width: 40rem" alt="" />
+        </div>
+        <br /><br />
+
+        <div class="col-md-7 islem">
+          <label for="">Standart Sapma: </label>
+          <input
+            type="number"
+            id="Standart-Sapma"
+            placeholder="SS Değerini Giriniz"
+          />
+          <br />
+          <label>Aritmetik Ortalama: </label>
+          <input
+            type="number"
+            id="Aritmetik-Ortalama"
+            placeholder="AO Değerini Giriniz"
+          />
+
+          <br />
+          <label for="x-deger">X Değeri: </label>
+          <input type="number" id="x-Zscore" placeholder="X Değerini Giriniz" />
+          <br />
+
+          <button id="Zscore" type="button" class="btn btn-primary">
+            Hesapla
+          </button>
+        </div>
+        <div class="col-md-4 cozum">
+          <b id="cozum-yaz2"></b>
+        </div>
+      </div>
+
+      <br />
+    </div>
+
+    <!-- JS path -->
+    <script src="1app.js"></script>
+  </body>
+</html>

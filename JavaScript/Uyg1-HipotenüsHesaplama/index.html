@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hipotenüs Hesaplama</title>
+    <!-- Bootstrap ekleme -->
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <style>
+    #sonuc {
+      height: 5rem;
+      margin-top: 4rem;
+      margin-left: 1rem;
+      text-align: center;
+      padding: 20px;
+      font-size: 25px;
+    }
+    #hesapla {
+      width: 19rem;
+      margin-left: 3rem;
+      text-align: center;
+      padding: 15px;
+    }
+    .col-md-6 {
+      margin: 15px;
+    }
+    h2 {
+      text-align: center;
+    }
+  </style>
+  <body>
+    <h2>JavaScript Hipotenüs Hesaplama</h2>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="sayi1">Sayi 1:</label>
+          <input
+            type="number"
+            id="sayi1"
+            class="form-control"
+            placeholder="Birinci sayınız giriniz"
+          />
+        </div>
+
+        <br />
+
+        <div class="form-group">
+          <label for="sayi2">Sayi 2:</label>
+          <input
+            type="number"
+            id="sayi2"
+            class="form-control"
+            placeholder="Birinci sayınız giriniz"
+          />
+        </div>
+
+        <!-- Button -->
+        <br />
+
+        <button
+          type="button"
+          class="btn btn-warning"
+          id="hesapla"
+          (click)="onClick($event)"
+        >
+          Hesapla
+        </button>
+      </div>
+      <div class="col-md-4">
+        <div class="alert alert-primary" id="sonuc"></div>
+      </div>
+    </div>
+
+    <!-- script dosyasını ekleme -->
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dikdörtgen Alan Hesaplama</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">
+        Jquery Textbox Kullanarak Dikdörtgen Alan ve Çevre Hesaplama
+      </h1>
+
+      <hr />
+      <div class="row">
+        <div class="col-md-2">
+          <label for="">Uzunluk: </label>
+          <br />
+          <br />
+          <label for="">Genişlik: </label>
+        </div>
+        <div class="col-md-8">
+          <input id="uzunluk" type="number" />
+          <br />
+          <br />
+          <input id="genislik" type="number" />
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-md-8">
+          <button class="btn btn-success col-md-12" id="hesapla">
+            Hesapla
+          </button>
+        </div>
+      </div>
+      <hr>
+      <div class="col-md-12 alert-">
+        <h3 id="alan" class="alert-warning col-md-8"></h3>
+
+        <h3 id="cevre" class="alert-primary col-md-8"></h3>
+      </div>
+    </div>
+  </body>
+</html>
